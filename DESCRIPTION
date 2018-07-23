@@ -1,0 +1,14 @@
+Package: rna
+Type: Package
+Title: Helper functions for DNA analysis
+Version: 0.1.0
+Author: Derek Sollberger
+Maintainer: Derek Sollberger <dsollberger@ucmerced.edu>
+Description: helper functions for DNA analysis
+    (based on "Python for Biologists" by Martin Jones)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+
+Imports:
+    stringr
