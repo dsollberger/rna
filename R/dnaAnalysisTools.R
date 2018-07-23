@@ -1,13 +1,13 @@
-#' calculates AG content of a DNA sequence
+#' calculates AT content of a DNA sequence
 #'
 #' @param x gene (string)
-#' @return decimal (proportion of AG alleles)
+#' @return decimal (proportion of A or T alleles)
 #' @examples
-#' AG_content("accctctgtttgtctccacgtcttataacttctggctatggcgatgggtacaggtccgggtccgc")
+#' AT_content("accctctgtttgtctccacgtcttataacttctggctatggcgatgggtacaggtccgggtccgc")
 
-AG_content <- function(dna_seq){
+AT_content <- function(dna_seq){
   dna_seq <- str_to_lower(dna_seq)
   sequence_length <- nchar(dna_seq)
 
-  ( str_count(dna_seq, "a") + str_count(dna_seq, "g") ) / sequence_length
+  ( str_count(dna_seq, "a") + str_count(dna_seq, "t") ) / sequence_length
 }
